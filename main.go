@@ -30,6 +30,8 @@ func main() {
 	// ROUTER
 	iris.Get("/", controllers.LoginCheck)
 	iris.Get("/login", controllers.Login)
+	iris.Get("/dashboard", controllers.Dashboard)
+	iris.Get("/gittigidiyor", controllers.Gittigidiyor)
 
 	// ERROR
 	errorLogger := logger.New()
